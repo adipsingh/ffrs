@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mvcdemoModelStoreContainer" CdmEntityContainer="frssdbEntities">
+    <FunctionImportMapping FunctionImportName="sp_savecompmaster" FunctionName="mvcdemoModel.Store.sp_savecompmaster">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="mvcdemoModel.sp_savecompmaster_Result">
+          <ScalarProperty Name="respid" ColumnName="respid" />
+          <ScalarProperty Name="errorcode" ColumnName="errorcode" />
+          <ScalarProperty Name="errormessage" ColumnName="errormessage" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spl_getcompmasterlist" FunctionName="mvcdemoModel.Store.spl_getcompmasterlist">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="mvcdemoModel.spl_getcompmasterlist_Result">
+          <ScalarProperty Name="compid" ColumnName="compid" />
+          <ScalarProperty Name="compcode" ColumnName="compcode" />
+          <ScalarProperty Name="compname" ColumnName="compname" />
+          <ScalarProperty Name="compcity" ColumnName="compcity" />
+          <ScalarProperty Name="compstate" ColumnName="compstate" />
+          <ScalarProperty Name="compmobile1" ColumnName="compmobile1" />
+          <ScalarProperty Name="compemail" ColumnName="compemail" />
+          <ScalarProperty Name="compweb" ColumnName="compweb" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spl_getcompmasterlistbyid" FunctionName="mvcdemoModel.Store.spl_getcompmasterlistbyid">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="mvcdemoModel.spl_getcompmasterlistbyid_Result">
+          <ScalarProperty Name="compid" ColumnName="compid" />
+          <ScalarProperty Name="compid1" ColumnName="compid1" />
+          <ScalarProperty Name="compcode" ColumnName="compcode" />
+          <ScalarProperty Name="compname" ColumnName="compname" />
+          <ScalarProperty Name="compaddr1" ColumnName="compaddr1" />
+          <ScalarProperty Name="compaddr2" ColumnName="compaddr2" />
+          <ScalarProperty Name="compaddr3" ColumnName="compaddr3" />
+          <ScalarProperty Name="compcity" ColumnName="compcity" />
+          <ScalarProperty Name="compzip" ColumnName="compzip" />
+          <ScalarProperty Name="compstate" ColumnName="compstate" />
+          <ScalarProperty Name="compcontry" ColumnName="compcontry" />
+          <ScalarProperty Name="compstdcode" ColumnName="compstdcode" />
+          <ScalarProperty Name="compphone" ColumnName="compphone" />
+          <ScalarProperty Name="compmobile1" ColumnName="compmobile1" />
+          <ScalarProperty Name="compmobile2" ColumnName="compmobile2" />
+          <ScalarProperty Name="compweb" ColumnName="compweb" />
+          <ScalarProperty Name="compemail" ColumnName="compemail" />
+          <ScalarProperty Name="compstatecode" ColumnName="compstatecode" />
+          <ScalarProperty Name="compgstno" ColumnName="compgstno" />
+          <ScalarProperty Name="comppanno" ColumnName="comppanno" />
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="tanno" ColumnName="tanno" />
+          <ScalarProperty Name="regdate" ColumnName="regdate" />
+          <ScalarProperty Name="regno" ColumnName="regno" />
+          <ScalarProperty Name="faxno" ColumnName="faxno" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="abcmmxyzs">
+      <EntityTypeMapping TypeName="mvcdemoModel.abcmmxyz">
+        <MappingFragment StoreEntitySet="abcmmxyz">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="agdfgcidrttr" ColumnName="agdfgcidrttr" />
+          <ScalarProperty Name="fgewervrfkeysasf" ColumnName="fgewervrfkeysasf" />
+          <ScalarProperty Name="hydfgshdnobb" ColumnName="hydfgshdnobb" />
+          <ScalarProperty Name="vtggspnosg" ColumnName="vtggspnosg" />
+          <ScalarProperty Name="uvadfdnusetbt" ColumnName="uvadfdnusetbt" />
+          <ScalarProperty Name="ttdssdactubt" ColumnName="ttdssdactubt" />
+          <ScalarProperty Name="rrggregdtgttd" ColumnName="rrggregdtgttd" />
+          <ScalarProperty Name="sdgrexdtsgrg" ColumnName="sdgrexdtsgrg" />
+          <ScalarProperty Name="padsrownr" ColumnName="padsrownr" />
+          <ScalarProperty Name="ijyskqop" ColumnName="ijyskqop" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bankmicrcodes">
+      <EntityTypeMapping TypeName="mvcdemoModel.bankmicrcode">
+        <MappingFragment StoreEntitySet="bankmicrcode">
+          <ScalarProperty Name="bankaddress" ColumnName="bankaddress" />
+          <ScalarProperty Name="branchname" ColumnName="branchname" />
+          <ScalarProperty Name="micrcode" ColumnName="micrcode" />
+          <ScalarProperty Name="ifsccode" ColumnName="ifsccode" />
+          <ScalarProperty Name="bankname" ColumnName="bankname" />
+          <ScalarProperty Name="codeid" ColumnName="codeid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="compfinyears">
+      <EntityTypeMapping TypeName="mvcdemoModel.compfinyear">
+        <MappingFragment StoreEntitySet="compfinyear">
+          <ScalarProperty Name="deleteddatetime" ColumnName="deleteddatetime" />
+          <ScalarProperty Name="deletedby" ColumnName="deletedby" />
+          <ScalarProperty Name="deletedflg" ColumnName="deletedflg" />
+          <ScalarProperty Name="editdatetime" ColumnName="editdatetime" />
+          <ScalarProperty Name="editedby" ColumnName="editedby" />
+          <ScalarProperty Name="adddatetime" ColumnName="adddatetime" />
+          <ScalarProperty Name="addedby" ColumnName="addedby" />
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="syncflg" ColumnName="syncflg" />
+          <ScalarProperty Name="finyrend" ColumnName="finyrend" />
+          <ScalarProperty Name="finyrstart" ColumnName="finyrstart" />
+          <ScalarProperty Name="compid" ColumnName="compid" />
+          <ScalarProperty Name="compfinid1" ColumnName="compfinid1" />
+          <ScalarProperty Name="compfinid" ColumnName="compfinid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="compmasters">
+      <EntityTypeMapping TypeName="mvcdemoModel.compmaster">
+        <MappingFragment StoreEntitySet="compmaster">
+          <ScalarProperty Name="faxno" ColumnName="faxno" />
+          <ScalarProperty Name="regno" ColumnName="regno" />
+          <ScalarProperty Name="regdate" ColumnName="regdate" />
+          <ScalarProperty Name="tanno" ColumnName="tanno" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="deleteddatetime" ColumnName="deleteddatetime" />
+          <ScalarProperty Name="deletedby" ColumnName="deletedby" />
+          <ScalarProperty Name="deletedflg" ColumnName="deletedflg" />
+          <ScalarProperty Name="editdatetime" ColumnName="editdatetime" />
+          <ScalarProperty Name="editedby" ColumnName="editedby" />
+          <ScalarProperty Name="adddatetime" ColumnName="adddatetime" />
+          <ScalarProperty Name="addedby" ColumnName="addedby" />
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="syncflg" ColumnName="syncflg" />
+          <ScalarProperty Name="comppanno" ColumnName="comppanno" />
+          <ScalarProperty Name="compgstno" ColumnName="compgstno" />
+          <ScalarProperty Name="compstatecode" ColumnName="compstatecode" />
+          <ScalarProperty Name="compemail" ColumnName="compemail" />
+          <ScalarProperty Name="compweb" ColumnName="compweb" />
+          <ScalarProperty Name="compmobile2" ColumnName="compmobile2" />
+          <ScalarProperty Name="compmobile1" ColumnName="compmobile1" />
+          <ScalarProperty Name="compphone" ColumnName="compphone" />
+          <ScalarProperty Name="compstdcode" ColumnName="compstdcode" />
+          <ScalarProperty Name="compcontry" ColumnName="compcontry" />
+          <ScalarProperty Name="compstate" ColumnName="compstate" />
+          <ScalarProperty Name="compzip" ColumnName="compzip" />
+          <ScalarProperty Name="compcity" ColumnName="compcity" />
+          <ScalarProperty Name="compaddr3" ColumnName="compaddr3" />
+          <ScalarProperty Name="compaddr2" ColumnName="compaddr2" />
+          <ScalarProperty Name="compaddr1" ColumnName="compaddr1" />
+          <ScalarProperty Name="compname" ColumnName="compname" />
+          <ScalarProperty Name="compcode" ColumnName="compcode" />
+          <ScalarProperty Name="compid1" ColumnName="compid1" />
+          <ScalarProperty Name="compid" ColumnName="compid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="compuserrights">
+      <EntityTypeMapping TypeName="mvcdemoModel.compuserright">
+        <MappingFragment StoreEntitySet="compuserrights">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="compaccess" ColumnName="compaccess" />
+          <ScalarProperty Name="compid" ColumnName="compid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="rightsid1" ColumnName="rightsid1" />
+          <ScalarProperty Name="rightsid" ColumnName="rightsid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="emailsettings">
+      <EntityTypeMapping TypeName="mvcdemoModel.emailsetting">
+        <MappingFragment StoreEntitySet="emailsetting">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="syncflg" ColumnName="syncflg" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="emailid" ColumnName="emailid" />
+          <ScalarProperty Name="portno" ColumnName="portno" />
+          <ScalarProperty Name="enablessl" ColumnName="enablessl" />
+          <ScalarProperty Name="smtpname" ColumnName="smtpname" />
+          <ScalarProperty Name="portalname" ColumnName="portalname" />
+          <ScalarProperty Name="id1" ColumnName="id1" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="filemanagers">
+      <EntityTypeMapping TypeName="mvcdemoModel.filemanager">
+        <MappingFragment StoreEntitySet="filemanager">
+          <ScalarProperty Name="compfinid" ColumnName="compfinid" />
+          <ScalarProperty Name="compid" ColumnName="compid" />
+          <ScalarProperty Name="deleteddatetime" ColumnName="deleteddatetime" />
+          <ScalarProperty Name="deletedby" ColumnName="deletedby" />
+          <ScalarProperty Name="deletedflg" ColumnName="deletedflg" />
+          <ScalarProperty Name="editdatetime" ColumnName="editdatetime" />
+          <ScalarProperty Name="editedby" ColumnName="editedby" />
+          <ScalarProperty Name="adddatetime" ColumnName="adddatetime" />
+          <ScalarProperty Name="addedby" ColumnName="addedby" />
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="syncflg" ColumnName="syncflg" />
+          <ScalarProperty Name="filedescr" ColumnName="filedescr" />
+          <ScalarProperty Name="uploadeddate" ColumnName="uploadeddate" />
+          <ScalarProperty Name="filedate" ColumnName="filedate" />
+          <ScalarProperty Name="filetitle" ColumnName="filetitle" />
+          <ScalarProperty Name="filesubcatid" ColumnName="filesubcatid" />
+          <ScalarProperty Name="filecatid" ColumnName="filecatid" />
+          <ScalarProperty Name="filecode" ColumnName="filecode" />
+          <ScalarProperty Name="fileid1" ColumnName="fileid1" />
+          <ScalarProperty Name="fileid" ColumnName="fileid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="filemanagerdtls">
+      <EntityTypeMapping TypeName="mvcdemoModel.filemanagerdtl">
+        <MappingFragment StoreEntitySet="filemanagerdtl">
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="filetype" ColumnName="filetype" />
+          <ScalarProperty Name="deleteddatetime" ColumnName="deleteddatetime" />
+          <ScalarProperty Name="deletedby" ColumnName="deletedby" />
+          <ScalarProperty Name="deletedflg" ColumnName="deletedflg" />
+          <ScalarProperty Name="editdatetime" ColumnName="editdatetime" />
+          <ScalarProperty Name="editedby" ColumnName="editedby" />
+          <ScalarProperty Name="adddatetime" ColumnName="adddatetime" />
+          <ScalarProperty Name="addedby" ColumnName="addedby" />
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="syncflg" ColumnName="syncflg" />
+          <ScalarProperty Name="fileimage" ColumnName="fileimage" />
+          <ScalarProperty Name="fileid" ColumnName="fileid" />
+          <ScalarProperty Name="filedtlid1" ColumnName="filedtlid1" />
+          <ScalarProperty Name="filedtlid" ColumnName="filedtlid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstchallandowns">
+      <EntityTypeMapping TypeName="mvcdemoModel.mstchallandown">
+        <MappingFragment StoreEntitySet="mstchallandown">
+          <ScalarProperty Name="filetype" ColumnName="filetype" />
+          <ScalarProperty Name="fileimage" ColumnName="fileimage" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="challanno" ColumnName="challanno" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstcomboes">
+      <EntityTypeMapping TypeName="mvcdemoModel.mstcombo">
+        <MappingFragment StoreEntitySet="mstcombo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fieldvalue" ColumnName="fieldvalue" />
+          <ScalarProperty Name="fieldname" ColumnName="fieldname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstfilecategories">
+      <EntityTypeMapping TypeName="mvcdemoModel.mstfilecategory">
+        <MappingFragment StoreEntitySet="mstfilecategory">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="catname" ColumnName="catname" />
+          <ScalarProperty Name="catid" ColumnName="catid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstfilesubcategories">
+      <EntityTypeMapping TypeName="mvcdemoModel.mstfilesubcategory">
+        <MappingFragment StoreEntitySet="mstfilesubcategory">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="subcatname" ColumnName="subcatname" />
+          <ScalarProperty Name="storeindb" ColumnName="storeindb" />
+          <ScalarProperty Name="catid" ColumnName="catid" />
+          <ScalarProperty Name="subcatid" ColumnName="subcatid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userinfoes">
+      <EntityTypeMapping TypeName="mvcdemoModel.userinfo">
+        <MappingFragment StoreEntitySet="userinfo">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="syncflg" ColumnName="syncflg" />
+          <ScalarProperty Name="compserialkey" ColumnName="compserialkey" />
+          <ScalarProperty Name="compdruglicno" ColumnName="compdruglicno" />
+          <ScalarProperty Name="comppanno" ColumnName="comppanno" />
+          <ScalarProperty Name="compgstno" ColumnName="compgstno" />
+          <ScalarProperty Name="compweb" ColumnName="compweb" />
+          <ScalarProperty Name="compemail" ColumnName="compemail" />
+          <ScalarProperty Name="compmobile2" ColumnName="compmobile2" />
+          <ScalarProperty Name="compmobile1" ColumnName="compmobile1" />
+          <ScalarProperty Name="compphone" ColumnName="compphone" />
+          <ScalarProperty Name="compstdcode" ColumnName="compstdcode" />
+          <ScalarProperty Name="compcontry" ColumnName="compcontry" />
+          <ScalarProperty Name="compstatecode" ColumnName="compstatecode" />
+          <ScalarProperty Name="compstate" ColumnName="compstate" />
+          <ScalarProperty Name="compcity" ColumnName="compcity" />
+          <ScalarProperty Name="compzip" ColumnName="compzip" />
+          <ScalarProperty Name="compaddr3" ColumnName="compaddr3" />
+          <ScalarProperty Name="compaddr2" ColumnName="compaddr2" />
+          <ScalarProperty Name="compaddr1" ColumnName="compaddr1" />
+          <ScalarProperty Name="compname" ColumnName="compname" />
+          <ScalarProperty Name="compcode" ColumnName="compcode" />
+          <ScalarProperty Name="infoid" ColumnName="infoid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userlogs">
+      <EntityTypeMapping TypeName="mvcdemoModel.userlog">
+        <MappingFragment StoreEntitySet="userlog">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="activeflg" ColumnName="activeflg" />
+          <ScalarProperty Name="machinename" ColumnName="machinename" />
+          <ScalarProperty Name="macid" ColumnName="macid" />
+          <ScalarProperty Name="logoutdatetime" ColumnName="logoutdatetime" />
+          <ScalarProperty Name="logindatetime" ColumnName="logindatetime" />
+          <ScalarProperty Name="logindate" ColumnName="logindate" />
+          <ScalarProperty Name="userlogid1" ColumnName="userlogid1" />
+          <ScalarProperty Name="userlogid" ColumnName="userlogid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usermasters">
+      <EntityTypeMapping TypeName="mvcdemoModel.usermaster">
+        <MappingFragment StoreEntitySet="usermaster">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="sendmailrights" ColumnName="sendmailrights" />
+          <ScalarProperty Name="downloadrights" ColumnName="downloadrights" />
+          <ScalarProperty Name="uploadrights" ColumnName="uploadrights" />
+          <ScalarProperty Name="deleterights" ColumnName="deleterights" />
+          <ScalarProperty Name="editrights" ColumnName="editrights" />
+          <ScalarProperty Name="addrights" ColumnName="addrights" />
+          <ScalarProperty Name="lockuser" ColumnName="lockuser" />
+          <ScalarProperty Name="macid" ColumnName="macid" />
+          <ScalarProperty Name="syncflg" ColumnName="syncflg" />
+          <ScalarProperty Name="userstatus" ColumnName="userstatus" />
+          <ScalarProperty Name="useremail" ColumnName="useremail" />
+          <ScalarProperty Name="usermobile" ColumnName="usermobile" />
+          <ScalarProperty Name="userpwd" ColumnName="userpwd" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="userid1" ColumnName="userid1" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="compfinyearlists">
+      <EntityTypeMapping TypeName="mvcdemoModel.compfinyearlist">
+        <MappingFragment StoreEntitySet="compfinyearlist">
+          <ScalarProperty Name="finyear" ColumnName="finyear" />
+          <ScalarProperty Name="compname" ColumnName="compname" />
+          <ScalarProperty Name="compcode" ColumnName="compcode" />
+          <ScalarProperty Name="compfinid" ColumnName="compfinid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="compmasterlists">
+      <EntityTypeMapping TypeName="mvcdemoModel.compmasterlist">
+        <MappingFragment StoreEntitySet="compmasterlist">
+          <ScalarProperty Name="compweb" ColumnName="compweb" />
+          <ScalarProperty Name="compemail" ColumnName="compemail" />
+          <ScalarProperty Name="compmobile1" ColumnName="compmobile1" />
+          <ScalarProperty Name="compstate" ColumnName="compstate" />
+          <ScalarProperty Name="compcity" ColumnName="compcity" />
+          <ScalarProperty Name="compname" ColumnName="compname" />
+          <ScalarProperty Name="compcode" ColumnName="compcode" />
+          <ScalarProperty Name="compid" ColumnName="compid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="filemanagercomplists">
+      <EntityTypeMapping TypeName="mvcdemoModel.filemanagercomplist">
+        <MappingFragment StoreEntitySet="filemanagercomplist">
+          <ScalarProperty Name="compfinid" ColumnName="compfinid" />
+          <ScalarProperty Name="compid" ColumnName="compid" />
+          <ScalarProperty Name="subcatname" ColumnName="subcatname" />
+          <ScalarProperty Name="catname" ColumnName="catname" />
+          <ScalarProperty Name="filetitle" ColumnName="filetitle" />
+          <ScalarProperty Name="finyear" ColumnName="finyear" />
+          <ScalarProperty Name="compname" ColumnName="compname" />
+          <ScalarProperty Name="filedate" ColumnName="filedate" />
+          <ScalarProperty Name="filecode" ColumnName="filecode" />
+          <ScalarProperty Name="fileid" ColumnName="fileid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="filemanagerlists">
+      <EntityTypeMapping TypeName="mvcdemoModel.filemanagerlist">
+        <MappingFragment StoreEntitySet="filemanagerlist">
+          <ScalarProperty Name="subcatname" ColumnName="subcatname" />
+          <ScalarProperty Name="catname" ColumnName="catname" />
+          <ScalarProperty Name="filetitle" ColumnName="filetitle" />
+          <ScalarProperty Name="filedate" ColumnName="filedate" />
+          <ScalarProperty Name="filecode" ColumnName="filecode" />
+          <ScalarProperty Name="fileid" ColumnName="fileid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userinfolists">
+      <EntityTypeMapping TypeName="mvcdemoModel.userinfolist">
+        <MappingFragment StoreEntitySet="userinfolist">
+          <ScalarProperty Name="compdruglicno" ColumnName="compdruglicno" />
+          <ScalarProperty Name="comppanno" ColumnName="comppanno" />
+          <ScalarProperty Name="compgstno" ColumnName="compgstno" />
+          <ScalarProperty Name="compweb" ColumnName="compweb" />
+          <ScalarProperty Name="compemail" ColumnName="compemail" />
+          <ScalarProperty Name="compmobile2" ColumnName="compmobile2" />
+          <ScalarProperty Name="compmobile1" ColumnName="compmobile1" />
+          <ScalarProperty Name="compphone" ColumnName="compphone" />
+          <ScalarProperty Name="compstdcode" ColumnName="compstdcode" />
+          <ScalarProperty Name="compcontry" ColumnName="compcontry" />
+          <ScalarProperty Name="compstatecode" ColumnName="compstatecode" />
+          <ScalarProperty Name="compstate" ColumnName="compstate" />
+          <ScalarProperty Name="compzip" ColumnName="compzip" />
+          <ScalarProperty Name="compcity" ColumnName="compcity" />
+          <ScalarProperty Name="compaddr3" ColumnName="compaddr3" />
+          <ScalarProperty Name="compaddr2" ColumnName="compaddr2" />
+          <ScalarProperty Name="compaddr1" ColumnName="compaddr1" />
+          <ScalarProperty Name="compname" ColumnName="compname" />
+          <ScalarProperty Name="compcode" ColumnName="compcode" />
+          <ScalarProperty Name="infoid" ColumnName="infoid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usermasterlists">
+      <EntityTypeMapping TypeName="mvcdemoModel.usermasterlist">
+        <MappingFragment StoreEntitySet="usermasterlist">
+          <ScalarProperty Name="userstatus" ColumnName="userstatus" />
+          <ScalarProperty Name="useremail" ColumnName="useremail" />
+          <ScalarProperty Name="usermobile" ColumnName="usermobile" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mvcdemoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="abcmmxyz">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="ijyskqop" Type="nvarchar(max)" />
+    <Property Name="padsrownr" Type="nvarchar(max)" />
+    <Property Name="sdgrexdtsgrg" Type="nvarchar(max)" />
+    <Property Name="rrggregdtgttd" Type="nvarchar(max)" />
+    <Property Name="ttdssdactubt" Type="nvarchar(max)" />
+    <Property Name="uvadfdnusetbt" Type="nvarchar(max)" />
+    <Property Name="vtggspnosg" Type="nvarchar(max)" />
+    <Property Name="hydfgshdnobb" Type="nvarchar(max)" />
+    <Property Name="fgewervrfkeysasf" Type="nvarchar(max)" />
+    <Property Name="agdfgcidrttr" Type="nvarchar(max)" />
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bankmicrcode">
+    <Key>
+      <PropertyRef Name="codeid" />
+    </Key>
+    <Property Name="codeid" Type="bigint" Nullable="false" />
+    <Property Name="bankname" Type="nvarchar" MaxLength="200" />
+    <Property Name="ifsccode" Type="nvarchar" MaxLength="100" />
+    <Property Name="micrcode" Type="nvarchar" MaxLength="100" />
+    <Property Name="branchname" Type="nvarchar" MaxLength="200" />
+    <Property Name="bankaddress" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="compfinyear">
+    <Key>
+      <PropertyRef Name="compfinid" />
+    </Key>
+    <Property Name="compfinid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="compfinid1" Type="bigint" />
+    <Property Name="compid" Type="nvarchar" MaxLength="50" />
+    <Property Name="finyrstart" Type="nvarchar" MaxLength="10" />
+    <Property Name="finyrend" Type="nvarchar" MaxLength="10" />
+    <Property Name="syncflg" Type="bigint" />
+    <Property Name="custid" Type="nvarchar" MaxLength="20" />
+    <Property Name="addedby" Type="nvarchar" MaxLength="10" />
+    <Property Name="adddatetime" Type="datetime" />
+    <Property Name="editedby" Type="nvarchar" MaxLength="10" />
+    <Property Name="editdatetime" Type="datetime" />
+    <Property Name="deletedflg" Type="bigint" />
+    <Property Name="deletedby" Type="nvarchar" MaxLength="10" />
+    <Property Name="deleteddatetime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="compmaster">
+    <Key>
+      <PropertyRef Name="compid" />
+    </Key>
+    <Property Name="compid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="compid1" Type="bigint" />
+    <Property Name="compcode" Type="nvarchar" MaxLength="20" />
+    <Property Name="compname" Type="nvarchar" MaxLength="50" />
+    <Property Name="compaddr1" Type="nvarchar" MaxLength="100" />
+    <Property Name="compaddr2" Type="nvarchar" MaxLength="100" />
+    <Property Name="compaddr3" Type="nvarchar" MaxLength="100" />
+    <Property Name="compcity" Type="nvarchar" MaxLength="50" />
+    <Property Name="compzip" Type="bigint" />
+    <Property Name="compstate" Type="nvarchar" MaxLength="50" />
+    <Property Name="compcontry" Type="nvarchar" MaxLength="50" />
+    <Property Name="compstdcode" Type="bigint" />
+    <Property Name="compphone" Type="bigint" />
+    <Property Name="compmobile1" Type="bigint" />
+    <Property Name="compmobile2" Type="bigint" />
+    <Property Name="compweb" Type="nvarchar" MaxLength="50" />
+    <Property Name="compemail" Type="nvarchar" MaxLength="50" />
+    <Property Name="compstatecode" Type="bigint" />
+    <Property Name="compgstno" Type="nvarchar" MaxLength="50" />
+    <Property Name="comppanno" Type="nvarchar" MaxLength="50" />
+    <Property Name="syncflg" Type="bigint" />
+    <Property Name="custid" Type="nvarchar" MaxLength="20" />
+    <Property Name="addedby" Type="nvarchar" MaxLength="10" />
+    <Property Name="adddatetime" Type="datetime" />
+    <Property Name="editedby" Type="nvarchar" MaxLength="10" />
+    <Property Name="editdatetime" Type="datetime" />
+    <Property Name="deletedflg" Type="bigint" />
+    <Property Name="deletedby" Type="nvarchar" MaxLength="10" />
+    <Property Name="deleteddatetime" Type="datetime" />
+    <Property Name="area" Type="nvarchar" MaxLength="50" />
+    <Property Name="tanno" Type="nvarchar" MaxLength="100" />
+    <Property Name="regdate" Type="datetime" />
+    <Property Name="regno" Type="nvarchar" MaxLength="100" />
+    <Property Name="faxno" Type="bigint" />
+  </EntityType>
+  <EntityType Name="compuserrights">
+    <Key>
+      <PropertyRef Name="rightsid" />
+    </Key>
+    <Property Name="rightsid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="rightsid1" Type="bigint" />
+    <Property Name="userid" Type="nvarchar" MaxLength="50" />
+    <Property Name="compid" Type="nvarchar" MaxLength="50" />
+    <Property Name="compaccess" Type="bit" />
+    <Property Name="custid" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'shashang_frss.dbo.dtviewdesc' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="dtviewdesc">
+          <Property Name="dtviewname" Type="nvarchar" MaxLength="200" />
+          <Property Name="dtfieldname" Type="nvarchar" MaxLength="100" />
+          <Property Name="dtdesc" Type="nvarchar" MaxLength="200" />
+          <Property Name="flddatatype" Type="nvarchar" MaxLength="50" />
+          <Property Name="orderno" Type="bigint" />
+        </EntityType>-->
+  <EntityType Name="emailsetting">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="id1" Type="bigint" />
+    <Property Name="portalname" Type="nvarchar" MaxLength="100" />
+    <Property Name="smtpname" Type="nvarchar" MaxLength="100" />
+    <Property Name="enablessl" Type="nvarchar" MaxLength="100" />
+    <Property Name="portno" Type="bigint" />
+    <Property Name="emailid" Type="nvarchar" MaxLength="100" />
+    <Property Name="password" Type="nvarchar" MaxLength="100" />
+    <Property Name="syncflg" Type="bigint" />
+    <Property Name="custid" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="filemanager">
+    <Key>
+      <PropertyRef Name="fileid" />
+    </Key>
+    <Property Name="fileid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="fileid1" Type="bigint" />
+    <Property Name="filecode" Type="nvarchar" MaxLength="50" />
+    <Property Name="filecatid" Type="nvarchar" MaxLength="50" />
+    <Property Name="filesubcatid" Type="nvarchar" MaxLength="50" />
+    <Property Name="filetitle" Type="nvarchar" MaxLength="100" />
+    <Property Name="filedate" Type="datetime" />
+    <Property Name="uploadeddate" Type="datetime" />
+    <Property Name="filedescr" Type="nvarchar(max)" />
+    <Property Name="syncflg" Type="bigint" />
+    <Property Name="custid" Type="nvarchar" MaxLength="20" />
+    <Property Name="addedby" Type="nvarchar" MaxLength="10" />
+    <Property Name="adddatetime" Type="datetime" />
+    <Property Name="editedby" Type="nvarchar" MaxLength="10" />
+    <Property Name="editdatetime" Type="datetime" />
+    <Property Name="deletedflg" Type="bigint" />
+    <Property Name="deletedby" Type="nvarchar" MaxLength="10" />
+    <Property Name="deleteddatetime" Type="datetime" />
+    <Property Name="compid" Type="nvarchar" MaxLength="40" />
+    <Property Name="compfinid" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="filemanagerdtl">
+    <Key>
+      <PropertyRef Name="filedtlid" />
+    </Key>
+    <Property Name="filedtlid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="filedtlid1" Type="bigint" />
+    <Property Name="fileid" Type="nvarchar" MaxLength="50" />
+    <Property Name="fileimage" Type="image" />
+    <Property Name="syncflg" Type="bigint" />
+    <Property Name="custid" Type="nvarchar" MaxLength="20" />
+    <Property Name="addedby" Type="nvarchar" MaxLength="10" />
+    <Property Name="adddatetime" Type="datetime" />
+    <Property Name="editedby" Type="nvarchar" MaxLength="10" />
+    <Property Name="editdatetime" Type="datetime" />
+    <Property Name="deletedflg" Type="bigint" />
+    <Property Name="deletedby" Type="nvarchar" MaxLength="10" />
+    <Property Name="deleteddatetime" Type="datetime" />
+    <Property Name="filetype" Type="nvarchar" MaxLength="50" />
+    <Property Name="filename" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="mstchallandown">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="challanno" Type="nvarchar" MaxLength="100" />
+    <Property Name="filename" Type="nvarchar" MaxLength="100" />
+    <Property Name="fileimage" Type="image" />
+    <Property Name="filetype" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="mstcombo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="fieldname" Type="nvarchar" MaxLength="100" />
+    <Property Name="fieldvalue" Type="nvarchar" MaxLength="150" />
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mstfilecategory">
+    <Key>
+      <PropertyRef Name="catid" />
+    </Key>
+    <Property Name="catid" Type="bigint" Nullable="false" />
+    <Property Name="catname" Type="nvarchar" MaxLength="50" />
+    <Property Name="custid" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="mstfilesubcategory">
+    <Key>
+      <PropertyRef Name="subcatid" />
+    </Key>
+    <Property Name="subcatid" Type="bigint" Nullable="false" />
+    <Property Name="catid" Type="bigint" />
+    <Property Name="storeindb" Type="bigint" />
+    <Property Name="subcatname" Type="nvarchar" MaxLength="50" />
+    <Property Name="custid" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'shashang_frss.dbo.SoftwareUpdateInfo' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="SoftwareUpdateInfo">
+          <Property Name="ProjectName" Type="nvarchar" MaxLength="200" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="255" />
+          <Property Name="FileVersion" Type="nvarchar" MaxLength="255" />
+          <Property Name="VerDate" Type="datetime" />
+          <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+          <Property Name="FileType" Type="nvarchar" MaxLength="255" />
+          <Property Name="custid" Type="nvarchar" MaxLength="40" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'shashang_frss.dbo.SoftwareUpdateLog' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="SoftwareUpdateLog">
+          <Property Name="ProjectName" Type="nvarchar" MaxLength="200" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="200" />
+          <Property Name="FileVersion" Type="nvarchar" MaxLength="255" />
+          <Property Name="VerDate" Type="datetime" />
+          <Property Name="UpdateDate" Type="datetime" />
+          <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+          <Property Name="FileType" Type="nvarchar" MaxLength="255" />
+          <Property Name="OldVersion" Type="nvarchar" MaxLength="255" />
+          <Property Name="custid" Type="nvarchar" MaxLength="40" />
+        </EntityType>-->
+  <EntityType Name="userinfo">
+    <Key>
+      <PropertyRef Name="infoid" />
+    </Key>
+    <Property Name="infoid" Type="bigint" Nullable="false" />
+    <Property Name="compcode" Type="nvarchar" MaxLength="20" />
+    <Property Name="compname" Type="nvarchar" MaxLength="100" />
+    <Property Name="compaddr1" Type="nvarchar" MaxLength="150" />
+    <Property Name="compaddr2" Type="nvarchar" MaxLength="150" />
+    <Property Name="compaddr3" Type="nvarchar" MaxLength="150" />
+    <Property Name="compzip" Type="bigint" />
+    <Property Name="compcity" Type="nvarchar" MaxLength="100" />
+    <Property Name="compstate" Type="nvarchar" MaxLength="100" />
+    <Property Name="compstatecode" Type="bigint" />
+    <Property Name="compcontry" Type="nvarchar" MaxLength="50" />
+    <Property Name="compstdcode" Type="bigint" />
+    <Property Name="compphone" Type="bigint" />
+    <Property Name="compmobile1" Type="bigint" />
+    <Property Name="compmobile2" Type="bigint" />
+    <Property Name="compemail" Type="nvarchar" MaxLength="100" />
+    <Property Name="compweb" Type="nvarchar" MaxLength="100" />
+    <Property Name="compgstno" Type="nvarchar" MaxLength="20" />
+    <Property Name="comppanno" Type="nvarchar" MaxLength="20" />
+    <Property Name="compdruglicno" Type="nvarchar" MaxLength="20" />
+    <Property Name="compserialkey" Type="nvarchar" MaxLength="20" />
+    <Property Name="syncflg" Type="bigint" />
+    <Property Name="custid" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="userlog">
+    <Key>
+      <PropertyRef Name="userlogid" />
+    </Key>
+    <Property Name="userlogid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="userlogid1" Type="bigint" />
+    <Property Name="logindate" Type="datetime" />
+    <Property Name="logindatetime" Type="datetime" />
+    <Property Name="logoutdatetime" Type="datetime" />
+    <Property Name="macid" Type="nvarchar" MaxLength="20" />
+    <Property Name="machinename" Type="nvarchar" MaxLength="20" />
+    <Property Name="activeflg" Type="bit" />
+    <Property Name="userid" Type="nvarchar" MaxLength="20" />
+    <Property Name="custid" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="usermaster">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="userid" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="userid1" Type="bigint" />
+    <Property Name="username" Type="nvarchar" MaxLength="10" />
+    <Property Name="userpwd" Type="nvarchar" MaxLength="10" />
+    <Property Name="usermobile" Type="nvarchar" MaxLength="20" />
+    <Property Name="useremail" Type="nvarchar" MaxLength="50" />
+    <Property Name="userstatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="syncflg" Type="bigint" />
+    <Property Name="macid" Type="nvarchar" MaxLength="40" />
+    <Property Name="lockuser" Type="nvarchar" MaxLength="2" />
+    <Property Name="addrights" Type="bit" />
+    <Property Name="editrights" Type="bit" />
+    <Property Name="deleterights" Type="bit" />
+    <Property Name="uploadrights" Type="bit" />
+    <Property Name="downloadrights" Type="bit" />
+    <Property Name="sendmailrights" Type="bit" />
+    <Property Name="custid" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'shashang_frss.dbo.compfinyearlist' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="compfinyearlist">
+    <Key>
+      <PropertyRef Name="compfinid" />
+    </Key>
+    <Property Name="compfinid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="compcode" Type="nvarchar" MaxLength="20" />
+    <Property Name="compname" Type="nvarchar" MaxLength="50" />
+    <Property Name="finyear" Type="nvarchar" MaxLength="21" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'shashang_frss.dbo.compmasterlist' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="compmasterlist">
+    <Key>
+      <PropertyRef Name="compid" />
+    </Key>
+    <Property Name="compid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="compcode" Type="nvarchar" MaxLength="20" />
+    <Property Name="compname" Type="nvarchar" MaxLength="50" />
+    <Property Name="compcity" Type="nvarchar" MaxLength="50" />
+    <Property Name="compstate" Type="nvarchar" MaxLength="50" />
+    <Property Name="compmobile1" Type="bigint" />
+    <Property Name="compemail" Type="nvarchar" MaxLength="50" />
+    <Property Name="compweb" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'shashang_frss.dbo.filemanagercomplist' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="filemanagercomplist">
+    <Key>
+      <PropertyRef Name="fileid" />
+      <PropertyRef Name="compid" />
+      <PropertyRef Name="compfinid" />
+    </Key>
+    <Property Name="fileid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="filecode" Type="nvarchar" MaxLength="50" />
+    <Property Name="filedate" Type="datetime" />
+    <Property Name="compname" Type="nvarchar" MaxLength="50" />
+    <Property Name="finyear" Type="nvarchar" MaxLength="21" />
+    <Property Name="filetitle" Type="nvarchar" MaxLength="100" />
+    <Property Name="catname" Type="nvarchar" MaxLength="50" />
+    <Property Name="subcatname" Type="nvarchar" MaxLength="50" />
+    <Property Name="compid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="compfinid" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'shashang_frss.dbo.filemanagerlist' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="filemanagerlist">
+    <Key>
+      <PropertyRef Name="fileid" />
+    </Key>
+    <Property Name="fileid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="filecode" Type="nvarchar" MaxLength="50" />
+    <Property Name="filedate" Type="datetime" />
+    <Property Name="filetitle" Type="nvarchar" MaxLength="100" />
+    <Property Name="catname" Type="nvarchar" MaxLength="50" />
+    <Property Name="subcatname" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'shashang_frss.dbo.userinfolist' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="userinfolist">
+    <Key>
+      <PropertyRef Name="infoid" />
+    </Key>
+    <Property Name="infoid" Type="bigint" Nullable="false" />
+    <Property Name="compcode" Type="nvarchar" MaxLength="20" />
+    <Property Name="compname" Type="nvarchar" MaxLength="100" />
+    <Property Name="compaddr1" Type="nvarchar" MaxLength="150" />
+    <Property Name="compaddr2" Type="nvarchar" MaxLength="150" />
+    <Property Name="compaddr3" Type="nvarchar" MaxLength="150" />
+    <Property Name="compcity" Type="nvarchar" MaxLength="100" />
+    <Property Name="compzip" Type="bigint" />
+    <Property Name="compstate" Type="nvarchar" MaxLength="100" />
+    <Property Name="compstatecode" Type="bigint" />
+    <Property Name="compcontry" Type="nvarchar" MaxLength="50" />
+    <Property Name="compstdcode" Type="bigint" />
+    <Property Name="compphone" Type="bigint" />
+    <Property Name="compmobile1" Type="bigint" />
+    <Property Name="compmobile2" Type="bigint" />
+    <Property Name="compemail" Type="nvarchar" MaxLength="100" />
+    <Property Name="compweb" Type="nvarchar" MaxLength="100" />
+    <Property Name="compgstno" Type="nvarchar" MaxLength="20" />
+    <Property Name="comppanno" Type="nvarchar" MaxLength="20" />
+    <Property Name="compdruglicno" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'shashang_frss.dbo.usermasterlist' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="usermasterlist">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="userid" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="10" />
+    <Property Name="usermobile" Type="nvarchar" MaxLength="20" />
+    <Property Name="useremail" Type="nvarchar" MaxLength="50" />
+    <Property Name="userstatus" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'shashang_frss.dbo.viewgstfilecount' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="viewgstfilecount">
+          <Property Name="compid" Type="nvarchar" MaxLength="40" />
+          <Property Name="total" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'shashang_frss.dbo.viewinctaxfilecount' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="viewinctaxfilecount">
+          <Property Name="compid" Type="nvarchar" MaxLength="40" />
+          <Property Name="total" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'shashang_frss.dbo.viewtaxauditfilecount' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="viewtaxauditfilecount">
+          <Property Name="compid" Type="nvarchar" MaxLength="40" />
+          <Property Name="total" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'shashang_frss.dbo.viewtotalfilecount' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="viewtotalfilecount">
+          <Property Name="compid" Type="nvarchar" MaxLength="40" />
+          <Property Name="total" Type="int" />
+        </EntityType>-->
+  <Function Name="sp_savecompmaster" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_mode" Type="int" Mode="In" />
+    <Parameter Name="p_compid" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_compcode" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_compname" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_compaddr1" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_compaddr2" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_compaddr3" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_compcity" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_compzip" Type="bigint" Mode="In" />
+    <Parameter Name="p_compstate" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_compcontry" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_compstdcode" Type="bigint" Mode="In" />
+    <Parameter Name="p_compphone" Type="bigint" Mode="In" />
+    <Parameter Name="p_compmobile1" Type="bigint" Mode="In" />
+    <Parameter Name="p_compmobile2" Type="bigint" Mode="In" />
+    <Parameter Name="p_compweb" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_compemail" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_compstatecode" Type="bigint" Mode="In" />
+    <Parameter Name="p_compgstno" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_comppanno" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_custid" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_addedby" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_errorcode" Type="bigint" Mode="InOut" />
+    <Parameter Name="p_errormessage" Type="nvarchar(max)" Mode="InOut" />
+    <Parameter Name="p_respid" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="spl_getcompmasterlist" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_custid" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_errorcode" Type="int" Mode="InOut" />
+    <Parameter Name="p_errormessage" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="spl_getcompmasterlistbyid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_compid" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_custid" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_errorcode" Type="int" Mode="InOut" />
+    <Parameter Name="p_errormessage" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <EntityContainer Name="mvcdemoModelStoreContainer">
+    <EntitySet Name="abcmmxyz" EntityType="Self.abcmmxyz" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bankmicrcode" EntityType="Self.bankmicrcode" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="compfinyear" EntityType="Self.compfinyear" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="compmaster" EntityType="Self.compmaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="compuserrights" EntityType="Self.compuserrights" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="emailsetting" EntityType="Self.emailsetting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="filemanager" EntityType="Self.filemanager" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="filemanagerdtl" EntityType="Self.filemanagerdtl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mstchallandown" EntityType="Self.mstchallandown" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mstcombo" EntityType="Self.mstcombo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mstfilecategory" EntityType="Self.mstfilecategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mstfilesubcategory" EntityType="Self.mstfilesubcategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="userinfo" EntityType="Self.userinfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="userlog" EntityType="Self.userlog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usermaster" EntityType="Self.usermaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="compfinyearlist" EntityType="Self.compfinyearlist" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [compfinyearlist].[compfinid] AS [compfinid], 
+    [compfinyearlist].[compcode] AS [compcode], 
+    [compfinyearlist].[compname] AS [compname], 
+    [compfinyearlist].[finyear] AS [finyear]
+    FROM [dbo].[compfinyearlist] AS [compfinyearlist]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="compmasterlist" EntityType="Self.compmasterlist" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [compmasterlist].[compid] AS [compid], 
+    [compmasterlist].[compcode] AS [compcode], 
+    [compmasterlist].[compname] AS [compname], 
+    [compmasterlist].[compcity] AS [compcity], 
+    [compmasterlist].[compstate] AS [compstate], 
+    [compmasterlist].[compmobile1] AS [compmobile1], 
+    [compmasterlist].[compemail] AS [compemail], 
+    [compmasterlist].[compweb] AS [compweb]
+    FROM [dbo].[compmasterlist] AS [compmasterlist]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="filemanagercomplist" EntityType="Self.filemanagercomplist" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [filemanagercomplist].[fileid] AS [fileid], 
+    [filemanagercomplist].[filecode] AS [filecode], 
+    [filemanagercomplist].[filedate] AS [filedate], 
+    [filemanagercomplist].[compname] AS [compname], 
+    [filemanagercomplist].[finyear] AS [finyear], 
+    [filemanagercomplist].[filetitle] AS [filetitle], 
+    [filemanagercomplist].[catname] AS [catname], 
+    [filemanagercomplist].[subcatname] AS [subcatname], 
+    [filemanagercomplist].[compid] AS [compid], 
+    [filemanagercomplist].[compfinid] AS [compfinid]
+    FROM [dbo].[filemanagercomplist] AS [filemanagercomplist]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="filemanagerlist" EntityType="Self.filemanagerlist" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [filemanagerlist].[fileid] AS [fileid], 
+    [filemanagerlist].[filecode] AS [filecode], 
+    [filemanagerlist].[filedate] AS [filedate], 
+    [filemanagerlist].[filetitle] AS [filetitle], 
+    [filemanagerlist].[catname] AS [catname], 
+    [filemanagerlist].[subcatname] AS [subcatname]
+    FROM [dbo].[filemanagerlist] AS [filemanagerlist]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="userinfolist" EntityType="Self.userinfolist" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [userinfolist].[infoid] AS [infoid], 
+    [userinfolist].[compcode] AS [compcode], 
+    [userinfolist].[compname] AS [compname], 
+    [userinfolist].[compaddr1] AS [compaddr1], 
+    [userinfolist].[compaddr2] AS [compaddr2], 
+    [userinfolist].[compaddr3] AS [compaddr3], 
+    [userinfolist].[compcity] AS [compcity], 
+    [userinfolist].[compzip] AS [compzip], 
+    [userinfolist].[compstate] AS [compstate], 
+    [userinfolist].[compstatecode] AS [compstatecode], 
+    [userinfolist].[compcontry] AS [compcontry], 
+    [userinfolist].[compstdcode] AS [compstdcode], 
+    [userinfolist].[compphone] AS [compphone], 
+    [userinfolist].[compmobile1] AS [compmobile1], 
+    [userinfolist].[compmobile2] AS [compmobile2], 
+    [userinfolist].[compemail] AS [compemail], 
+    [userinfolist].[compweb] AS [compweb], 
+    [userinfolist].[compgstno] AS [compgstno], 
+    [userinfolist].[comppanno] AS [comppanno], 
+    [userinfolist].[compdruglicno] AS [compdruglicno]
+    FROM [dbo].[userinfolist] AS [userinfolist]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="usermasterlist" EntityType="Self.usermasterlist" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [usermasterlist].[userid] AS [userid], 
+    [usermasterlist].[username] AS [username], 
+    [usermasterlist].[usermobile] AS [usermobile], 
+    [usermasterlist].[useremail] AS [useremail], 
+    [usermasterlist].[userstatus] AS [userstatus]
+    FROM [dbo].[usermasterlist] AS [usermasterlist]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

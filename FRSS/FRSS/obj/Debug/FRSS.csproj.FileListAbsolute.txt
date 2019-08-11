@@ -1,0 +1,126 @@
+D:\Personal\IBS\TMS\web version\FRSS\bin\FRSS.dll.config
+D:\Personal\IBS\TMS\web version\FRSS\bin\FRSS.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\FRSS.pdb
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\csc.exe
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\csc.exe.config
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\csc.rsp
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\csi.exe
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\csi.rsp
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\System.AppContext.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\System.Collections.Immutable.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\System.IO.FileSystem.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\System.Reflection.Metadata.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\vbc.exe
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\vbc.exe.config
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\vbc.rsp
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\VBCSCompiler.exe
+D:\Personal\IBS\TMS\web version\FRSS\bin\roslyn\VBCSCompiler.exe.config
+D:\Personal\IBS\TMS\web version\FRSS\bin\Antlr3.Runtime.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\Business.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\EntityFramework.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\EntityFramework.SqlServer.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\Microsoft.Web.Infrastructure.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\Newtonsoft.Json.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.Helpers.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.Mvc.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.Optimization.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.Razor.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.WebPages.Deployment.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.WebPages.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.WebPages.Razor.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\WebGrease.dll
+D:\Personal\IBS\TMS\web version\FRSS\bin\Business.pdb
+D:\Personal\IBS\TMS\web version\FRSS\bin\Business.dll.config
+D:\Personal\IBS\TMS\web version\FRSS\bin\EntityFramework.xml
+D:\Personal\IBS\TMS\web version\FRSS\bin\EntityFramework.SqlServer.xml
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.Helpers.xml
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.Mvc.xml
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.Optimization.xml
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.Razor.xml
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.WebPages.xml
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.WebPages.Deployment.xml
+D:\Personal\IBS\TMS\web version\FRSS\bin\System.Web.WebPages.Razor.xml
+D:\Personal\IBS\TMS\web version\FRSS\bin\Newtonsoft.Json.xml
+D:\Personal\IBS\TMS\web version\FRSS\bin\Antlr3.Runtime.pdb
+D:\Personal\IBS\TMS\web version\FRSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Personal\IBS\TMS\web version\FRSS\obj\Debug\FRSS.csprojAssemblyReference.cache
+D:\Personal\IBS\TMS\web version\FRSS\obj\Debug\FRSS.csproj.CoreCompileInputs.cache
+D:\Personal\IBS\TMS\web version\FRSS\obj\Debug\FRSS.csproj.CopyComplete
+D:\Personal\IBS\TMS\web version\FRSS\obj\Debug\FRSS.dll
+D:\Personal\IBS\TMS\web version\FRSS\obj\Debug\FRSS.pdb
+D:\Official\FRSS\FRSS\bin\FRSS.dll.config
+D:\Official\FRSS\FRSS\bin\FRSS.dll
+D:\Official\FRSS\FRSS\bin\FRSS.pdb
+D:\Official\FRSS\FRSS\bin\roslyn\csc.exe
+D:\Official\FRSS\FRSS\bin\roslyn\csc.exe.config
+D:\Official\FRSS\FRSS\bin\roslyn\csc.rsp
+D:\Official\FRSS\FRSS\bin\roslyn\csi.exe
+D:\Official\FRSS\FRSS\bin\roslyn\csi.rsp
+D:\Official\FRSS\FRSS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Official\FRSS\FRSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Official\FRSS\FRSS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Official\FRSS\FRSS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Official\FRSS\FRSS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Official\FRSS\FRSS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Official\FRSS\FRSS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Official\FRSS\FRSS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Official\FRSS\FRSS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Official\FRSS\FRSS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Official\FRSS\FRSS\bin\roslyn\System.AppContext.dll
+D:\Official\FRSS\FRSS\bin\roslyn\System.Collections.Immutable.dll
+D:\Official\FRSS\FRSS\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Official\FRSS\FRSS\bin\roslyn\System.IO.FileSystem.dll
+D:\Official\FRSS\FRSS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Official\FRSS\FRSS\bin\roslyn\System.Reflection.Metadata.dll
+D:\Official\FRSS\FRSS\bin\roslyn\vbc.exe
+D:\Official\FRSS\FRSS\bin\roslyn\vbc.exe.config
+D:\Official\FRSS\FRSS\bin\roslyn\vbc.rsp
+D:\Official\FRSS\FRSS\bin\roslyn\VBCSCompiler.exe
+D:\Official\FRSS\FRSS\bin\roslyn\VBCSCompiler.exe.config
+D:\Official\FRSS\FRSS\bin\Antlr3.Runtime.dll
+D:\Official\FRSS\FRSS\bin\Business.dll
+D:\Official\FRSS\FRSS\bin\EntityFramework.dll
+D:\Official\FRSS\FRSS\bin\EntityFramework.SqlServer.dll
+D:\Official\FRSS\FRSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Official\FRSS\FRSS\bin\Microsoft.Web.Infrastructure.dll
+D:\Official\FRSS\FRSS\bin\Newtonsoft.Json.dll
+D:\Official\FRSS\FRSS\bin\System.Web.Helpers.dll
+D:\Official\FRSS\FRSS\bin\System.Web.Mvc.dll
+D:\Official\FRSS\FRSS\bin\System.Web.Optimization.dll
+D:\Official\FRSS\FRSS\bin\System.Web.Razor.dll
+D:\Official\FRSS\FRSS\bin\System.Web.WebPages.Deployment.dll
+D:\Official\FRSS\FRSS\bin\System.Web.WebPages.dll
+D:\Official\FRSS\FRSS\bin\System.Web.WebPages.Razor.dll
+D:\Official\FRSS\FRSS\bin\WebGrease.dll
+D:\Official\FRSS\FRSS\bin\Business.pdb
+D:\Official\FRSS\FRSS\bin\Business.dll.config
+D:\Official\FRSS\FRSS\bin\EntityFramework.xml
+D:\Official\FRSS\FRSS\bin\EntityFramework.SqlServer.xml
+D:\Official\FRSS\FRSS\bin\System.Web.Helpers.xml
+D:\Official\FRSS\FRSS\bin\System.Web.Mvc.xml
+D:\Official\FRSS\FRSS\bin\System.Web.Optimization.xml
+D:\Official\FRSS\FRSS\bin\System.Web.Razor.xml
+D:\Official\FRSS\FRSS\bin\System.Web.WebPages.xml
+D:\Official\FRSS\FRSS\bin\System.Web.WebPages.Deployment.xml
+D:\Official\FRSS\FRSS\bin\System.Web.WebPages.Razor.xml
+D:\Official\FRSS\FRSS\bin\Newtonsoft.Json.xml
+D:\Official\FRSS\FRSS\bin\Antlr3.Runtime.pdb
+D:\Official\FRSS\FRSS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Official\FRSS\FRSS\obj\Debug\FRSS.csprojAssemblyReference.cache
+D:\Official\FRSS\FRSS\obj\Debug\FRSS.csproj.CoreCompileInputs.cache
+D:\Official\FRSS\FRSS\obj\Debug\FRSS.csproj.CopyComplete
+D:\Official\FRSS\FRSS\obj\Debug\FRSS.dll
+D:\Official\FRSS\FRSS\obj\Debug\FRSS.pdb

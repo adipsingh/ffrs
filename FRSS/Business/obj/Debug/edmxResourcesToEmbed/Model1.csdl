@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mvcdemoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="frssdbEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_savecompmaster" ReturnType="Collection(mvcdemoModel.sp_savecompmaster_Result)">
+      <Parameter Name="p_mode" Mode="In" Type="Int32" />
+      <Parameter Name="p_compid" Mode="In" Type="String" />
+      <Parameter Name="p_compcode" Mode="In" Type="String" />
+      <Parameter Name="p_compname" Mode="In" Type="String" />
+      <Parameter Name="p_compaddr1" Mode="In" Type="String" />
+      <Parameter Name="p_compaddr2" Mode="In" Type="String" />
+      <Parameter Name="p_compaddr3" Mode="In" Type="String" />
+      <Parameter Name="p_compcity" Mode="In" Type="String" />
+      <Parameter Name="p_compzip" Mode="In" Type="Int64" />
+      <Parameter Name="p_compstate" Mode="In" Type="String" />
+      <Parameter Name="p_compcontry" Mode="In" Type="String" />
+      <Parameter Name="p_compstdcode" Mode="In" Type="Int64" />
+      <Parameter Name="p_compphone" Mode="In" Type="Int64" />
+      <Parameter Name="p_compmobile1" Mode="In" Type="Int64" />
+      <Parameter Name="p_compmobile2" Mode="In" Type="Int64" />
+      <Parameter Name="p_compweb" Mode="In" Type="String" />
+      <Parameter Name="p_compemail" Mode="In" Type="String" />
+      <Parameter Name="p_compstatecode" Mode="In" Type="Int64" />
+      <Parameter Name="p_compgstno" Mode="In" Type="String" />
+      <Parameter Name="p_comppanno" Mode="In" Type="String" />
+      <Parameter Name="p_custid" Mode="In" Type="String" />
+      <Parameter Name="p_addedby" Mode="In" Type="String" />
+      <Parameter Name="p_errorcode" Mode="InOut" Type="Int64" />
+      <Parameter Name="p_errormessage" Mode="InOut" Type="String" />
+      <Parameter Name="p_respid" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spl_getcompmasterlist" ReturnType="Collection(mvcdemoModel.spl_getcompmasterlist_Result)">
+      <Parameter Name="p_custid" Mode="In" Type="String" />
+      <Parameter Name="p_errorcode" Mode="InOut" Type="Int32" />
+      <Parameter Name="p_errormessage" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spl_getcompmasterlistbyid" ReturnType="Collection(mvcdemoModel.spl_getcompmasterlistbyid_Result)">
+      <Parameter Name="p_compid" Mode="In" Type="String" />
+      <Parameter Name="p_custid" Mode="In" Type="String" />
+      <Parameter Name="p_errorcode" Mode="InOut" Type="Int32" />
+      <Parameter Name="p_errormessage" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="abcmmxyzs" EntityType="mvcdemoModel.abcmmxyz" />
+    <EntitySet Name="bankmicrcodes" EntityType="mvcdemoModel.bankmicrcode" />
+    <EntitySet Name="compfinyears" EntityType="mvcdemoModel.compfinyear" />
+    <EntitySet Name="compmasters" EntityType="mvcdemoModel.compmaster" />
+    <EntitySet Name="compuserrights" EntityType="mvcdemoModel.compuserright" />
+    <EntitySet Name="emailsettings" EntityType="mvcdemoModel.emailsetting" />
+    <EntitySet Name="filemanagers" EntityType="mvcdemoModel.filemanager" />
+    <EntitySet Name="filemanagerdtls" EntityType="mvcdemoModel.filemanagerdtl" />
+    <EntitySet Name="mstchallandowns" EntityType="mvcdemoModel.mstchallandown" />
+    <EntitySet Name="mstcomboes" EntityType="mvcdemoModel.mstcombo" />
+    <EntitySet Name="mstfilecategories" EntityType="mvcdemoModel.mstfilecategory" />
+    <EntitySet Name="mstfilesubcategories" EntityType="mvcdemoModel.mstfilesubcategory" />
+    <EntitySet Name="userinfoes" EntityType="mvcdemoModel.userinfo" />
+    <EntitySet Name="userlogs" EntityType="mvcdemoModel.userlog" />
+    <EntitySet Name="usermasters" EntityType="mvcdemoModel.usermaster" />
+    <EntitySet Name="compfinyearlists" EntityType="mvcdemoModel.compfinyearlist" />
+    <EntitySet Name="compmasterlists" EntityType="mvcdemoModel.compmasterlist" />
+    <EntitySet Name="filemanagercomplists" EntityType="mvcdemoModel.filemanagercomplist" />
+    <EntitySet Name="filemanagerlists" EntityType="mvcdemoModel.filemanagerlist" />
+    <EntitySet Name="userinfolists" EntityType="mvcdemoModel.userinfolist" />
+    <EntitySet Name="usermasterlists" EntityType="mvcdemoModel.usermasterlist" />
+  </EntityContainer>
+  <ComplexType Name="sp_savecompmaster_Result">
+    <Property Type="String" Name="respid" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="errorcode" Nullable="true" />
+    <Property Type="String" Name="errormessage" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spl_getcompmasterlist_Result">
+    <Property Type="String" Name="compid" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compcode" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compname" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compcity" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compstate" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compmobile1" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compemail" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compweb" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="spl_getcompmasterlistbyid_Result">
+    <Property Type="String" Name="compid" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="compid1" Nullable="true" />
+    <Property Type="String" Name="compcode" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compname" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compaddr1" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compaddr2" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compaddr3" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compcity" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="compzip" Nullable="true" />
+    <Property Type="String" Name="compstate" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compcontry" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="compstdcode" Nullable="true" />
+    <Property Type="Int64" Name="compphone" Nullable="true" />
+    <Property Type="Int64" Name="compmobile1" Nullable="true" />
+    <Property Type="Int64" Name="compmobile2" Nullable="true" />
+    <Property Type="String" Name="compweb" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="compemail" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="compstatecode" Nullable="true" />
+    <Property Type="String" Name="compgstno" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="comppanno" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="custid" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="area" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tanno" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="regdate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="regno" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="faxno" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="abcmmxyz">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="ijyskqop" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="padsrownr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sdgrexdtsgrg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="rrggregdtgttd" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ttdssdactubt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="uvadfdnusetbt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="vtggspnosg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hydfgshdnobb" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="fgewervrfkeysasf" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="agdfgcidrttr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="bankmicrcode">
+    <Key>
+      <PropertyRef Name="codeid" />
+    </Key>
+    <Property Name="codeid" Type="Int64" Nullable="false" />
+    <Property Name="bankname" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ifsccode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="micrcode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="branchname" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="bankaddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="compfinyear">
+    <Key>
+      <PropertyRef Name="compfinid" />
+    </Key>
+    <Property Name="compfinid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compfinid1" Type="Int64" />
+    <Property Name="compid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="finyrstart" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="finyrend" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="syncflg" Type="Int64" />
+    <Property Name="custid" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="addedby" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="adddatetime" Type="DateTime" Precision="3" />
+    <Property Name="editedby" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="editdatetime" Type="DateTime" Precision="3" />
+    <Property Name="deletedflg" Type="Int64" />
+    <Property Name="deletedby" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="deleteddatetime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="compmaster">
+    <Key>
+      <PropertyRef Name="compid" />
+    </Key>
+    <Property Name="compid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compid1" Type="Int64" />
+    <Property Name="compcode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="compname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compaddr1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compaddr2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compaddr3" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compcity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compzip" Type="Int64" />
+    <Property Name="compstate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compcontry" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compstdcode" Type="Int64" />
+    <Property Name="compphone" Type="Int64" />
+    <Property Name="compmobile1" Type="Int64" />
+    <Property Name="compmobile2" Type="Int64" />
+    <Property Name="compweb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compemail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compstatecode" Type="Int64" />
+    <Property Name="compgstno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="comppanno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="syncflg" Type="Int64" />
+    <Property Name="custid" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="addedby" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="adddatetime" Type="DateTime" Precision="3" />
+    <Property Name="editedby" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="editdatetime" Type="DateTime" Precision="3" />
+    <Property Name="deletedflg" Type="Int64" />
+    <Property Name="deletedby" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="deleteddatetime" Type="DateTime" Precision="3" />
+    <Property Name="area" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tanno" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="regdate" Type="DateTime" Precision="3" />
+    <Property Name="regno" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="faxno" Type="Int64" />
+  </EntityType>
+  <EntityType Name="compuserright">
+    <Key>
+      <PropertyRef Name="rightsid" />
+    </Key>
+    <Property Name="rightsid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="rightsid1" Type="Int64" />
+    <Property Name="userid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compaccess" Type="Boolean" />
+    <Property Name="custid" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="emailsetting">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id1" Type="Int64" />
+    <Property Name="portalname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="smtpname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="enablessl" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="portno" Type="Int64" />
+    <Property Name="emailid" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="syncflg" Type="Int64" />
+    <Property Name="custid" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="filemanager">
+    <Key>
+      <PropertyRef Name="fileid" />
+    </Key>
+    <Property Name="fileid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fileid1" Type="Int64" />
+    <Property Name="filecode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="filecatid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="filesubcatid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="filetitle" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="filedate" Type="DateTime" Precision="3" />
+    <Property Name="uploadeddate" Type="DateTime" Precision="3" />
+    <Property Name="filedescr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="syncflg" Type="Int64" />
+    <Property Name="custid" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="addedby" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="adddatetime" Type="DateTime" Precision="3" />
+    <Property Name="editedby" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="editdatetime" Type="DateTime" Precision="3" />
+    <Property Name="deletedflg" Type="Int64" />
+    <Property Name="deletedby" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="deleteddatetime" Type="DateTime" Precision="3" />
+    <Property Name="compid" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="compfinid" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="filemanagerdtl">
+    <Key>
+      <PropertyRef Name="filedtlid" />
+    </Key>
+    <Property Name="filedtlid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="filedtlid1" Type="Int64" />
+    <Property Name="fileid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fileimage" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="syncflg" Type="Int64" />
+    <Property Name="custid" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="addedby" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="adddatetime" Type="DateTime" Precision="3" />
+    <Property Name="editedby" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="editdatetime" Type="DateTime" Precision="3" />
+    <Property Name="deletedflg" Type="Int64" />
+    <Property Name="deletedby" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="deleteddatetime" Type="DateTime" Precision="3" />
+    <Property Name="filetype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="filename" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mstchallandown">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="challanno" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="filename" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="fileimage" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="filetype" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mstcombo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="fieldname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="fieldvalue" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="mstfilecategory">
+    <Key>
+      <PropertyRef Name="catid" />
+    </Key>
+    <Property Name="catid" Type="Int64" Nullable="false" />
+    <Property Name="catname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="custid" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mstfilesubcategory">
+    <Key>
+      <PropertyRef Name="subcatid" />
+    </Key>
+    <Property Name="subcatid" Type="Int64" Nullable="false" />
+    <Property Name="catid" Type="Int64" />
+    <Property Name="storeindb" Type="Int64" />
+    <Property Name="subcatname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="custid" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="userinfo">
+    <Key>
+      <PropertyRef Name="infoid" />
+    </Key>
+    <Property Name="infoid" Type="Int64" Nullable="false" />
+    <Property Name="compcode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="compname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compaddr1" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="compaddr2" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="compaddr3" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="compzip" Type="Int64" />
+    <Property Name="compcity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compstate" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compstatecode" Type="Int64" />
+    <Property Name="compcontry" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compstdcode" Type="Int64" />
+    <Property Name="compphone" Type="Int64" />
+    <Property Name="compmobile1" Type="Int64" />
+    <Property Name="compmobile2" Type="Int64" />
+    <Property Name="compemail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compweb" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compgstno" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="comppanno" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="compdruglicno" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="compserialkey" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="syncflg" Type="Int64" />
+    <Property Name="custid" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="userlog">
+    <Key>
+      <PropertyRef Name="userlogid" />
+    </Key>
+    <Property Name="userlogid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="userlogid1" Type="Int64" />
+    <Property Name="logindate" Type="DateTime" Precision="3" />
+    <Property Name="logindatetime" Type="DateTime" Precision="3" />
+    <Property Name="logoutdatetime" Type="DateTime" Precision="3" />
+    <Property Name="macid" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="machinename" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="activeflg" Type="Boolean" />
+    <Property Name="userid" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="custid" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="usermaster">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="userid" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="userid1" Type="Int64" />
+    <Property Name="username" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="userpwd" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="usermobile" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="useremail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="userstatus" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="syncflg" Type="Int64" />
+    <Property Name="macid" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="lockuser" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="addrights" Type="Boolean" />
+    <Property Name="editrights" Type="Boolean" />
+    <Property Name="deleterights" Type="Boolean" />
+    <Property Name="uploadrights" Type="Boolean" />
+    <Property Name="downloadrights" Type="Boolean" />
+    <Property Name="sendmailrights" Type="Boolean" />
+    <Property Name="custid" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="compfinyearlist">
+    <Key>
+      <PropertyRef Name="compfinid" />
+    </Key>
+    <Property Name="compfinid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compcode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="compname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="finyear" Type="String" MaxLength="21" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="compmasterlist">
+    <Key>
+      <PropertyRef Name="compid" />
+    </Key>
+    <Property Name="compid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compcode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="compname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compcity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compstate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compmobile1" Type="Int64" />
+    <Property Name="compemail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compweb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="filemanagercomplist">
+    <Key>
+      <PropertyRef Name="fileid" />
+      <PropertyRef Name="compid" />
+      <PropertyRef Name="compfinid" />
+    </Key>
+    <Property Name="fileid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="filecode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="filedate" Type="DateTime" Precision="3" />
+    <Property Name="compname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="finyear" Type="String" MaxLength="21" FixedLength="false" Unicode="true" />
+    <Property Name="filetitle" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="catname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="subcatname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compfinid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="filemanagerlist">
+    <Key>
+      <PropertyRef Name="fileid" />
+    </Key>
+    <Property Name="fileid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="filecode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="filedate" Type="DateTime" Precision="3" />
+    <Property Name="filetitle" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="catname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="subcatname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="userinfolist">
+    <Key>
+      <PropertyRef Name="infoid" />
+    </Key>
+    <Property Name="infoid" Type="Int64" Nullable="false" />
+    <Property Name="compcode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="compname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compaddr1" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="compaddr2" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="compaddr3" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="compcity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compzip" Type="Int64" />
+    <Property Name="compstate" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compstatecode" Type="Int64" />
+    <Property Name="compcontry" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="compstdcode" Type="Int64" />
+    <Property Name="compphone" Type="Int64" />
+    <Property Name="compmobile1" Type="Int64" />
+    <Property Name="compmobile2" Type="Int64" />
+    <Property Name="compemail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compweb" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="compgstno" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="comppanno" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="compdruglicno" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="usermasterlist">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="userid" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="username" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="usermobile" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="useremail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="userstatus" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

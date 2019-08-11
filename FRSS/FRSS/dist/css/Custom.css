@@ -1,0 +1,62 @@
+﻿
+.btn-padding-right {
+    padding-right: 0px;
+}
+
+.main-footer {
+    margin-left: 0px;
+}
+
+body {
+    font-size: 12px;
+}
+
+.box-header-new {
+    background-color: #f1f1f1
+}
+
+.box-patient-detail-dashboard {
+    max-height: 701px;
+    overflow-y: scroll;
+}
+
+.label-Confirm {
+    background-color: #800080
+}
+
+.remove-cursor-event {
+    pointer-events: none;
+    cursor: default;
+}
+
+.login_page_main {
+    background-color: #c2e3f4 !important;
+    background-image: url('../../img/login-bg.jpg') !important;
+    /*background-image: url(https://softcliniclivedev.azurewebsites.net/images/login-bg.jpg) !important;*/
+    background-repeat: no-repeat !important;
+}
+
+#dashboardcalendar .fc-month-view .fc-title {
+    font-size: 20px;
+}
+
+#dashboardcalendar .fc-agendaDay-view .fc-title {
+    color: white;
+}
+
+#dashboardcalendar .fc-agendaWeek-view .fc-title {
+    color: white;
+}
+
+#divSelectPatientList .modal-dialog {
+    width: 1000px;
+}
+
+#divSelectPatientList .modal-content {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.wrapper {
+    overflow-y:hidden;
+}
