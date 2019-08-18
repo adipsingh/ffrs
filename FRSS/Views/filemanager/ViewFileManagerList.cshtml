@@ -1,0 +1,234 @@
+﻿@using Business
+@using FRSS.Utility
+@model IEnumerable<FRSS.Models.filemanagermodel>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+        background-color: #008d4c;
+        color: white;
+    }
+
+    .dropdown-menu > li > a {
+        color: white;
+    }
+</style>
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        File Manager List
+    </h1>
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- /.box -->
+            <div class="box">
+                <div class="box-header">
+                    @Html.Partial("~/Views/Shared/_ErrorMessage.cshtml")
+                    <div class="col-md-8">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-2 btn-padding-right">
+                        @if (ProjectSession.addrights == true)
+                        {
+                            <a href="@(Url.Action("OprFileManager", "filemanager"))" class="btn btn-block btn-info"><i class="fa fa-plus"></i> Add </a>
+                        }
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table class="table table-bordered table-striped" id="example1">
+                        <thread>
+                            <tr>
+                                <td>
+                                    @Html.DisplayNameFor(model => model.fileid)
+                                </td>
+                                <td>
+                                    @Html.DisplayNameFor(model => model.filecode)
+                                </td>
+                                <td>
+                                    @Html.DisplayNameFor(model => model.filedate)
+                                </td>
+                                <td>
+                                    @Html.DisplayNameFor(model => model.compname)
+                                </td>
+                                <td>
+                                    @Html.DisplayNameFor(model => model.finyear)
+                                </td>
+                                <td>
+                                    @Html.DisplayNameFor(model => model.filetitle)
+                                </td>
+                                <td>
+                                    @Html.DisplayNameFor(model => model.catname)
+                                </td>
+                                <td>
+                                    @Html.DisplayNameFor(model => model.subcatname)
+                                </td>
+                                <td>Edit</td>
+                                <td>Email</td>
+                            </tr>
+                        </thread>
+
+                        @foreach (filemanagercomplist item in (List<filemanagercomplist>)ViewBag.FileManagerList)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.fileid)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.filecode)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.filedate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.compname)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.finyear)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.filetitle)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.catname)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.subcatname)
+                                </td>
+                                <td>
+                                    @if (ProjectSession.editrights == true)
+                                    {
+                                        <a href="~/filemanager/oprfilemanager?id=@item.fileid" title="Edit"><span class="glyphicon glyphicon-edit"></span></a>
+                                    }
+                                </td>
+                                <td>
+                                    @if (ProjectSession.editrights == true)
+                                    {
+                                        <a Email" data-id="@item.fileid"  data-toggle="modal" data-target="#myModal" class="open-email"><span class="glyphicon glyphicon-edit"></span></a>
+                                        @*<a data-toggle="modal" data-id="@item.fileid" title="Email" class="open-email btn btn-primary" href="#addBookDialog">test</a>
+                                        <button type="button" class="btn btn-info btn-lg open-email" data-id="@item.fileid"  data-toggle="modal" data-target="#myModal">Open Modal</button>*@
+                                    }
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+
+
+
+@*<div class="modal hide" id="addBookDialog">
+    <div class="modal-header">
+        <button class="close" data-dismiss="modal">×</button>
+        <h3>Modal header</h3>
+    </div>
+    <div class="modal-body">
+        <p>some content</p>
+        <input type="text" name="bookId" id="bookId" value="" />
+    </div>
+</div>*@
+
+
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p id="testID">Some text in the modal.</p>
+                <input class="form-control" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                <span class="field-validation-valid text-danger" id="emailValidationMessage" style="display:none">Enter valid Email</span>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="SendEmail" class="btn btn-default">Send</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- /.modal -->
+<script src="~/CommonJS/emailValidator.js"></script>
+<script>
+    
+    $(function () {
+
+        $(document).on("click", ".open-email", function () {
+            var myBookId = $(this).data('id');
+            $(".modal-body #testID").text(myBookId);
+            // As pointed out in comments, 
+            // it is unnecessary to have to manually call the modal.
+             $('#addBookDialog').modal('show');
+        });
+
+        $(document).on("click", "#SendEmail", function () {
+            debugger            
+            var email = $(".modal-body #Email").val();
+            if (validateEmail(email)) {
+
+                var fileid = $(".modal-body #testID").text();
+                $('#emailValidationMessage').hide();
+                $.ajax({
+                    method: "get",
+                    url: "/filemanager/SendEmail",
+                    data: {
+                        fileid: fileid, email: email 
+                    },
+                    success: function (id) {
+                        $('#myModal').modal('hide');
+                        $('#NonBussinessDay').val('');
+                        $('#Reason').val('');
+                        alert("Data Saved");
+                        $('#NonBusDayTBody').append(' <tr id="NonBusDay_' + id + '">'
+                            + '<td>' + date + '</td>' + '<td>' + reason + '</td>'
+                            + '<td><a href="javascript:void(0)" onclick="RemoveOffDays(' + id + ')"> Remove </a></td></tr>'
+
+                        );
+                    }
+                });
+                $('#myModal').modal('hide');
+            }
+            else {
+                // error 
+                $('#emailValidationMessage').show();
+            }
+            
+        });
+        
+        $('#example1').DataTable({
+            'paging': false,
+            'lengthChange': false,
+            'searching': true,
+            'ordering': true,
+            'info': false,
+            'autoWidth': false
+        });
+
+        $(".sidebar-menu li").removeClass('active');
+        $("#litransaction").addClass("active");
+        $("#lifileupdate").addClass("active");
+    })
+</script>
